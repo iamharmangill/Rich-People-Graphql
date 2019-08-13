@@ -4,6 +4,7 @@ import { ApolloProvider } from 'react-apollo'
 import { createHttpLink } from 'apollo-link-http'
 import AddContact from './components/AddContact'
 import Contacts from './components/Contacts'
+import Cars from './components/Cars';
 import './App.css'
 
 const client = new ApolloClient({
@@ -15,9 +16,10 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       <div className='App'>
-        <h1>Rich People and Cars Graphql</h1>
+      <h1>Rich People and Cars with GraphQL</h1>
         <AddContact/>
         <Contacts />
+        <Cars />
       </div>
     </ApolloProvider>
   )

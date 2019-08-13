@@ -6,6 +6,8 @@ import uuidv4 from 'uuid/v4'
 import { ADD_CONTACT, GET_CONTACTS } from '../queries'
 
 import { Button, TextField} from '@material-ui/core'
+// import { bool } from 'prop-types';
+// import { border } from '@material-ui/system';
 
 class AddContact extends Component {
   state = {
@@ -71,7 +73,7 @@ class AddContact extends Component {
               color='primary'
               style={{ margin: '5px' }}
             >
-              Add Contact
+              Add Owner
             </Button>
           </form>
         )}
